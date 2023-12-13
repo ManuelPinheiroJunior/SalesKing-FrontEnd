@@ -35,14 +35,14 @@ const Category = () => {
       render: (text) => <a>{text}</a>,
     },
     {
-      title: 'Nome',
+      title: 'Name',
       dataIndex: 'name',
       key: 'name',
       sorter: (a, b) => a.name.localeCompare(b.name),
       render: (text) => <a>{text}</a>,
     },
     {
-      title: 'Produtos',
+      title: 'Products',
       dataIndex: 'amountProducts',
       key: 'amountProducts',
       render: (text) => <a>{text}</a>,
@@ -82,28 +82,28 @@ const Category = () => {
           name: 'HOME',
         },
         {
-          name: 'CATEGORIAS',
+          name: 'CATEGORIES',
         },
       ]}
     >
       <Modal
-        title="Atenção"
+        title="Attention"
         open={openModalDelete}
         onOk={handleConfirmDeleteCategory}
         onCancel={handleCloseModalDelete}
-        okText="Sim"
-        cancelText="Cancelar"
+        okText="Yes"
+        cancelText="Cancel"
       >
-        <p>Tem certeza que deseja excluir essa categoria?</p>
+        <p>Are you sure you want to delete this category?</p>
       </Modal>
       <DisplayFlexJustifyBetween margin="0px 0px 16px 0px">
         <LimitedContainer width={240}>
-          <Search placeholder="Buscar categoria" onSearch={handleOnChangeSearch} enterButton />
+          <Search placeholder="Search category" onSearch={handleOnChangeSearch} enterButton />
         </LimitedContainer>
 
         <LimitedContainer width={120}>
           <Button type="primary" onClick={handleOnClickCategory}>
-            Inserir
+            Insert
           </Button>
         </LimitedContainer>
       </DisplayFlexJustifyBetween>

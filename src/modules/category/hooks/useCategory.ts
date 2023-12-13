@@ -54,7 +54,7 @@ export const useCategory = () => {
       MethodsEnum.DELETE,
       undefined,
       undefined,
-      'Categoria deletada com sucesso!',
+      'Category deleted successfully!',
     );
     request(URL_CATEGORY, MethodsEnum.GET, setCategories);
     setCategoryIdDelete(undefined);

@@ -27,7 +27,7 @@ const columns: ColumnsType<OrderType> = [
     render: (_, target) => <a>{target.user?.name}</a>,
   },
   {
-    title: 'Qtd. Produtos',
+    title: 'Qtd. Products',
     dataIndex: 'amountProducts',
     key: 'amountProducts',
     render: (text) => <a>{text}</a>,
@@ -45,7 +45,7 @@ const Order = () => {
           name: 'HOME',
         },
         {
-          name: 'PEDIDOS',
+          name: 'REQUESTS',
         },
       ]}
     >

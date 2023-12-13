@@ -1,14 +1,14 @@
-export const URL_USER = 'http://localhost:8080/user';
-export const URL_USER_ID = 'http://localhost:8080/user/{userId}';
-export const URL_USER_ALL = 'http://localhost:8080/user/all';
+export const URL_USER = 'https://sales-back-end.vercel.app/user';
+export const URL_USER_ID = 'https://sales-back-end.vercel.app/user/{userId}';
+export const URL_USER_ALL = 'https://sales-back-end.vercel.app/user/all';
 
-export const URL_AUTH = 'http://localhost:8080/auth';
+export const URL_AUTH = 'https://sales-back-end.vercel.app/auth';
 
-export const URL_PRODUCT = 'http://localhost:8080/product';
-export const URL_PRODUCT_ID = 'http://localhost:8080/product/{productId}';
+export const URL_PRODUCT = 'https://sales-back-end.vercel.app/product';
+export const URL_PRODUCT_ID = 'https://sales-back-end.vercel.app/product/{productId}';
 
-export const URL_CATEGORY = 'http://localhost:8080/category';
-export const URL_CATEGORY_ID = 'http://localhost:8080/category/{categoryId}';
+export const URL_CATEGORY = 'https://sales-back-end.vercel.app/category';
+export const URL_CATEGORY_ID = 'https://sales-back-end.vercel.app/category/{categoryId}';
 
-export const URL_ORDER_ID = 'http://localhost:8080/order/{orderId}';
-export const URL_ORDER_ALL = 'http://localhost:8080/order/all';
+export const URL_ORDER_ID = 'https://sales-back-end.vercel.app/order/{orderId}';
+export const URL_ORDER_ALL = 'https://sales-back-end.vercel.app/order/all';

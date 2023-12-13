@@ -40,20 +40,20 @@ const Product = () => {
         render: (_, product) => <TooltipImage product={product} />,
       },
       {
-        title: 'Nome',
+        title: 'Name',
         dataIndex: 'name',
         key: 'name',
         sorter: (a, b) => a.name.localeCompare(b.name),
         render: (text) => <a>{text}</a>,
       },
       {
-        title: 'Categoria',
+        title: 'Category',
         dataIndex: 'category',
         key: 'category',
         render: (_, product) => <CategoryColumn category={product.category} />,
       },
       {
-        title: 'Preço',
+        title: 'Price',
         dataIndex: 'price',
         key: 'price',
         render: (_, product) => <a>{convertNumberToMoney(product.price)}</a>,
@@ -95,28 +95,28 @@ const Product = () => {
           name: 'HOME',
         },
         {
-          name: 'PRODUTOS',
+          name: 'PRODUCTS',
         },
       ]}
     >
       <Modal
-        title="Atenção"
+        title="Attention"
         open={openModalDelete}
         onOk={handleDeleteProduct}
         onCancel={handleCloseModalDelete}
-        okText="Sim"
-        cancelText="Cancelar"
+        okText="Yes"
+        cancelText="Cancel"
       >
-        <p>Tem certeza que deseja excluir esse produto?</p>
+        <p>Are you sure you want to delete this product?</p>
       </Modal>
       <DisplayFlexJustifyBetween margin="0px 0px 16px 0px">
         <LimitedContainer width={240}>
-          <Search placeholder="Buscar produto" onSearch={onSearch} enterButton />
+          <Search placeholder="Search product" onSearch={onSearch} enterButton />
         </LimitedContainer>
 
         <LimitedContainer width={120}>
           <Button type="primary" onClick={handleOnClickInsert}>
-            Inserir
+            Insert
           </Button>
         </LimitedContainer>
       </DisplayFlexJustifyBetween>

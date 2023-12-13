@@ -40,11 +40,11 @@ const ProductInsert = () => {
           name: 'HOME',
         },
         {
-          name: 'PRODUTOS',
+          name: 'PRODUCTS',
           navigateTo: ProductRoutesEnum.PRODUCT,
         },
         {
-          name: 'INSERIR PRODUTO',
+          name: 'INSERT PRODUCT',
         },
       ]}
     >
@@ -60,8 +60,8 @@ const ProductInsert = () => {
               onChange={(event) => onChangeInput(event, 'name')}
               value={product.name}
               margin="0px 0px 16px 0px"
-              title="Nome"
-              placeholder="Nome"
+              title="Name"
+              placeholder="Name"
             />
             <Input
               data-testid={ProductInsertTestIdEnum.PRODUCT_INPUT_IMAGE}
@@ -76,13 +76,13 @@ const ProductInsert = () => {
               onChange={(event) => onChangeInput(event, 'price', true)}
               value={product.price}
               margin="0px 0px 16px 0px"
-              title="Preço"
-              placeholder="Preço"
+              title="Price"
+              placeholder="Price"
             />
             <Select
               defaultValue={`${product.categoryId || ''}`}
               data-testid={ProductInsertTestIdEnum.PRODUCT_INPUT_SELECT}
-              title="Categoria"
+              title="Category"
               margin="0px 0px 16px 0px"
               onChange={handleChangeSelect}
               options={categories.map((category: CategoryType) => ({
@@ -97,8 +97,8 @@ const ProductInsert = () => {
                 onChange={(event) => onChangeInput(event, 'weight', true)}
                 value={product.weight}
                 margin="0px 16px 16px 0px"
-                title="Peso"
-                placeholder="Peso"
+                title="Weight"
+                placeholder="Weight"
               />
               <InputMoney
                 data-testid={ProductInsertTestIdEnum.PRODUCT_INPUT_IMAGE}
@@ -106,8 +106,8 @@ const ProductInsert = () => {
                 onChange={(event) => onChangeInput(event, 'length', true)}
                 value={product.length}
                 margin="0px 0px 16px 0px"
-                title="Comprimento"
-                placeholder="Comprimento"
+                title="Length"
+                placeholder="Length"
               />
             </DisplayFlex>
             <DisplayFlex>
@@ -117,8 +117,8 @@ const ProductInsert = () => {
                 value={product.height}
                 addonBefore="cm"
                 margin="0px 16px 16px 0px"
-                title="Altura"
-                placeholder="Altura"
+                title="Height"
+                placeholder="Height"
               />
               <InputMoney
                 data-testid={ProductInsertTestIdEnum.PRODUCT_INPUT_IMAGE}
@@ -126,8 +126,8 @@ const ProductInsert = () => {
                 value={product.width}
                 addonBefore="cm"
                 margin="0px 0px 16px 0px"
-                title="Largura"
-                placeholder="Largura"
+                title="Width"
+                placeholder="Width"
               />
             </DisplayFlex>
             <InputMoney
@@ -136,8 +136,8 @@ const ProductInsert = () => {
               value={product.diameter}
               addonBefore="cm"
               margin="0px 0px 32px 0px"
-              title="Diâmetro"
-              placeholder="Diâmetro"
+              title="Diameter"
+              placeholder="Diameter"
             />
             <DisplayFlexJustifyRight>
               <LimitedContainer margin="0px 8px" width={120}>
@@ -146,7 +146,7 @@ const ProductInsert = () => {
                   danger
                   onClick={handleOnClickCancel}
                 >
-                  Cancelar
+                  Cancel
                 </Button>
               </LimitedContainer>
               <LimitedContainer width={120}>
@@ -157,7 +157,7 @@ const ProductInsert = () => {
                   onClick={handleInsertProduct}
                   type="primary"
                 >
-                  {isEdit ? 'Salvar' : 'Inserir produto'}
+                  {isEdit ? 'To save' : 'Insert product'}
                 </Button>
               </LimitedContainer>
             </DisplayFlexJustifyRight>

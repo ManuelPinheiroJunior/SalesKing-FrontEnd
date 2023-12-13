@@ -28,11 +28,11 @@ const CategoryInsert = () => {
           name: 'HOME',
         },
         {
-          name: 'CATEGORIAS',
+          name: 'CATEGORIES',
           navigateTo: CategoryRoutesEnum.CATEGORY,
         },
         {
-          name: categoryId ? 'EDITAR CATEGORIA' : 'INSERIR CATEGORIA',
+          name: categoryId ? 'EDIT CATEGORY' : 'INSERT CATEGORY',
         },
       ]}
     >
@@ -47,13 +47,13 @@ const CategoryInsert = () => {
               onChange={handleOnChangeName}
               value={name}
               margin="0px 0px 16px 0px"
-              title="Nome"
-              placeholder="Nome"
+              title="Name"
+              placeholder="Name"
             />
             <DisplayFlexJustifyRight>
               <LimitedContainer margin="0px 8px" width={120}>
                 <Button onClick={handleOnClickCancel} danger>
-                  Cancelar
+                  Cancel
                 </Button>
               </LimitedContainer>
               <LimitedContainer width={160}>
@@ -63,7 +63,7 @@ const CategoryInsert = () => {
                   onClick={insertCategory}
                   type="primary"
                 >
-                  {categoryId ? 'Salvar' : 'Inserir categoria'}
+                  {categoryId ? 'To Save' : 'Insert category'}
                 </Button>
               </LimitedContainer>
             </DisplayFlexJustifyRight>

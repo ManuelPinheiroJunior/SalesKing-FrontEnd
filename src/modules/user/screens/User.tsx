@@ -30,7 +30,7 @@ const columns: ColumnsType<UserType> = [
     render: (text) => <a>{text}</a>,
   },
   {
-    title: 'Nome',
+    title: 'Name',
     dataIndex: 'name',
     key: 'name',
     render: (text) => <a>{text}</a>,
@@ -42,7 +42,7 @@ const columns: ColumnsType<UserType> = [
     render: (text) => <a>{text}</a>,
   },
   {
-    title: 'Telefone',
+    title: 'Telephone',
     dataIndex: 'phone',
     key: 'phone',
     render: (text) => <a>{insertMaskInPhone(text)}</a>,
@@ -72,7 +72,7 @@ const User = () => {
           name: 'HOME',
         },
         {
-          name: 'USUÁRIOS',
+          name: 'USERS',
         },
       ]}
     >
@@ -84,12 +84,12 @@ const User = () => {
         <>
           <DisplayFlexJustifyBetween margin="0px 0px 16px 0px">
             <LimitedContainer width={240}>
-              <Search placeholder="Buscar usuário" onSearch={handleOnChangeSearch} enterButton />
+              <Search placeholder="Search user" onSearch={handleOnChangeSearch} enterButton />
             </LimitedContainer>
             <LimitedContainer width={180}>
               {userToken?.typeUser === UserTypeEnum.Root && (
                 <Button type="primary" onClick={handleGoToInsertAdmin}>
-                  Inserir Admin
+                  Insert Admin
                 </Button>
               )}
             </LimitedContainer>

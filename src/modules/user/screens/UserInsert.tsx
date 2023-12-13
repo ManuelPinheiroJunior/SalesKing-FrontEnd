@@ -20,11 +20,11 @@ const UserInsert = () => {
           name: 'HOME',
         },
         {
-          name: 'USUÁRIOS',
+          name: 'USERS',
           navigateTo: UserRoutesEnum.USER,
         },
         {
-          name: 'INSERIR',
+          name: 'INSERT',
         },
       ]}
     >
@@ -34,15 +34,15 @@ const UserInsert = () => {
             value={user.name}
             onChange={(event) => handleOnChangeInput(event, 'name')}
             margin="0px 0px 16px 0px"
-            title="Nome"
-            placeholder="Nome"
+            title="Name"
+            placeholder="Name"
           />
           <Input
             value={user.phone}
             onChange={(event) => handleOnChangeInput(event, 'phone')}
             margin="0px 0px 16px 0px"
-            title="Telefone"
-            placeholder="Telefone"
+            title="Telephone"
+            placeholder="Telephone"
           />
           <Input
             value={user.email}
@@ -62,19 +62,19 @@ const UserInsert = () => {
             value={user.password}
             onChange={(event) => handleOnChangeInput(event, 'password')}
             margin="0px 0px 16px 0px"
-            title="Senha"
-            placeholder="Senha"
+            title="PASSWORD"
+            placeholder="PASSWORD"
           />
 
           <DisplayFlexJustifyRight>
             <LimitedContainer margin="0px 8px" width={120}>
               <Button onClick={handleCancelInsert} danger>
-                Cancelar
+                Cancel
               </Button>
             </LimitedContainer>
             <LimitedContainer width={120}>
               <Button disabled={disabledButton} onClick={handleInsertAdmin} type="primary">
-                Inserir Admin
+                Enter Admin
               </Button>
             </LimitedContainer>
           </DisplayFlexJustifyRight>
