@@ -78,7 +78,7 @@ const LoginScreen = () => {
       </ContainerLogin>
       <BackgroundImage src="./background.png" />
 
-      {popoverVisible && <Popover onClose={closePopover} />}
+      {/* {popoverVisible && <Popover onClose={closePopover} />} */}
     </ContainerLoginScreen>
   );
 };
